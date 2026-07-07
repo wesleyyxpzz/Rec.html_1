@@ -2,26 +2,191 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Estrutura Base do Projeto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ALTERAÇÃO DE TÍTULO: Identidade única para o projeto -->
+    <title>Sinergia: O Impacto da Empatia e Cooperação</title>
+
+    <!-- IDENTIDADE VISUAL E ESTILO PRÓPRIO: CSS mesclado diretamente no Head -->
     <style>
-        /* Código CSS mesclado diretamente no cabeçalho */
-        body { font-family: sans-serif; background-color: #f0f2f5; color: #333; padding: 20px; }
-        .bloco-base { background: #ffffff; padding: 25px; border-radius: 8px; max-width: 600px; margin: 0 auto; }
-        h1 { color: #1e3a8a; }
-        p { line-height: 1.6; }
-        ul { padding-left: 20px; }
-        a { color: #2563eb; text-decoration: none; font-weight: bold; }
+        /* Configurações globais de reset e tipografia */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121824; /* Fundo escuro azulado moderno */
+            color: #e2e8f0; /* Texto claro para alto contraste */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* REORGANIZAÇÃO COM DIV: Container principal centralizado */
+        .container-geral {
+            max-width: 800px;
+            width: 100%;
+            background-color: #1e293b; /* Fundo dos cards */
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Bloco do cabeçalho da página */
+        .topo-cabecalho {
+            text-align: center;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Estilização do h1 principal */
+        .topo-cabecalho h1 {
+            color: #38bdf8; /* Azul vivo para destaque */
+            font-size: 2.6rem;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
+        }
+
+        /* Estilização do parágrafo de introdução */
+        .subtitulo {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        /* REORGANIZAÇÃO COM DIV: Blocos estruturais de artigos internos */
+        .card-artigo {
+            background-color: #0f172a;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 5px solid #38bdf8; /* Detalhe visual na borda */
+        }
+
+        /* h1 secundários dentro dos cards */
+        .card-artigo h1 {
+            color: #ffffff;
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        /* Parágrafos de texto modificados com o tema */
+        p {
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin: 0 0 15px 0;
+        }
+
+        /* Texto explicativo que antecede os itens */
+        .chamada-lista {
+            font-weight: bold;
+            color: #38bdf8;
+            margin-top: 20px;
+        }
+
+        /* LISTA ATUALIZADA: Customização do espaçamento dos marcadores */
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        /* NOVOS ITENS NA LISTA: Exemplos expandidos e inéditos */
+        li {
+            margin-bottom: 10px;
+            color: #94a3b8;
+        }
+
+        /* REORGANIZAÇÃO COM DIV: Alinhamento dos links inferiores */
+        .rodape-acoes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* LINKS PERSONALIZADOS: Transformados em botões interativos modernos */
+        .link-botao-principal {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito hover para o botão principal */
+        .link-botao-principal:hover {
+            background-color: #7dd3fc;
+            transform: translateY(-2px);
+        }
+
+        /* Estilo para o link secundário */
+        .link-botao-secundario {
+            display: inline-block;
+            background-color: transparent;
+            color: #38bdf8;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 2px solid #38bdf8;
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito hover para o botão secundário */
+        .link-botao-secundario:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
-    <div class="bloco-base">
-        <h1>Título Base</h1>
-        <p>Texto base introduzindo o tema do projeto.</p>
-        <ul>
-            <li>Item de exemplo da lista</li>
-        </ul>
-        <a href="#">Link de exemplo</a>
+
+    <!-- Estrutura visual da aplicação -->
+    <div class="container-geral">
+        
+        <!-- Cabeçalho com o novo título -->
+        <div class="topo-cabecalho">
+            <h1>Sinergia Coletiva</h1>
+            <p class="subtitulo">A evolução humana através do acolhimento e do trabalho em equipe.</p>
+        </div>
+
+        <!-- Seções de conteúdo organizadas -->
+        <div class="secao-conteudo">
+            
+            <!-- Card de Empatia com textos modificados -->
+            <div class="card-artigo">
+                <h1>Saber Ouvir é Empatia</h1>
+                <p>A verdadeira empatia exige silenciar nossas próprias opiniões para escutar a realidade do outro. É uma ponte psicológica construída sem julgamentos rápidos, permitindo conexões seguras e genuínas entre as pessoas.</p>
+            </div>
+
+            <!-- Card de Cooperação com textos modificados e novos exemplos -->
+            <div class="card-artigo">
+                <h1>Agir Juntos é Cooperação</h1>
+                <p>Se a empatia nos permite mapear a necessidade alheia, a cooperação transforma essa percepção em movimento real. Cooperar é entender que o crescimento individual está diretamente atrelado ao fortalecimento do grupo.</p>
+                
+                <p class="chamada-lista">Atitudes práticas para fortalecer redes coletivas:</p>
+                <!-- Lista expandida com novos itens obrigatórios -->
+                <ul>
+                    <li>Dividir conhecimentos técnicos de forma voluntária com quem está iniciando;</li>
+                    <li>Praticar feedbacks construtivos focados na evolução e não no erro;</li>
+                    <li>Respeitar o tempo e as limitações específicas de cada integrante do grupo;</li>
+                    <li>Compartilhar recursos e ferramentas para otimizar os objetivos em comum.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Links e botões personalizados no rodapé -->
+        <div class="rodape-acoes">
+            <a href="https://github.com" target="_blank" class="link-botao-principal">Participar da Comunidade</a>
+            <a href="#saibamais" class="link-botao-secundario">Ler Manifesto</a>
+        </div>
+
     </div>
+
 </body>
 </html>
-
