@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- INDIVIDUALIZAÇÃO: Título da página totalmente modificado -->
-    <title>Sinergia Humana: Teste de Empatia e Cooperação</title>
+    <!-- INDIVIDUALIZAÇÃO: Título da página alterado -->
+    <title>Sinergia Humana: Diálogos sobre Empatia e Cooperação</title>
 
-    <!-- ESTILO CSS PRÓPRIO: Identidade visual em tons de azul escuro e âmbar embutida na tag style -->
+    <!-- ESTILO CSS PRÓPRIO: Identidade visual moderna embutida na tag style -->
     <style>
         /* Estilos globais e reset de margens */
         body {
@@ -27,7 +27,7 @@
         .container-geral {
             max-width: 800px;
             width: 100%;
-            background-color: #1e293b; /* Fundo contrastante do painel principal */
+            background-color: #1e293b; /* Fundo contrastante do painel */
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -74,8 +74,8 @@
             border-left: 5px solid #38bdf8; /* Borda Azul para Cooperação */
         }
 
-        .borda-quiz {
-            border-left: 5px solid #f59e0b; /* Borda Âmbar para o Quiz de Seleção */
+        .borda-perguntas {
+            border-left: 5px solid #a855f7; /* Borda Roxa para Perguntas */
         }
 
         /* Títulos dos blocos de conteúdo */
@@ -93,45 +93,24 @@
             margin: 0 0 15px 0;
         }
 
-        /* Estilo específico para as perguntas do Quiz */
-        .pergunta-quiz {
+        /* Estilo específico para destacar as perguntas */
+        .pergunta-titulo {
             font-weight: bold;
-            color: #fde68a; /* Amarelo claro para destacar a pergunta */
-            margin-top: 20px;
-            margin-bottom: 10px;
+            color: #e9d5ff; /* Lilás claro para a pergunta */
+            margin-top: 15px;
+            margin-bottom: 5px;
         }
 
-        /* Customização da lista (ul e li) para organizar as opções de escolha */
-        .lista-opcoes {
-            list-style-type: none; /* Remove as bolinhas tradicionais da lista */
-            padding-left: 0;
-            margin: 0 0 20px 0;
+        /* Customização da lista (ul e li) */
+        ul {
+            padding-left: 20px;
+            margin: 0 0 15px 0;
         }
 
-        /* Estilização de cada item de opção para criar um bloco clicável */
-        .opcao-item {
-            background-color: #1e293b;
-            padding: 12px 16px;
-            border: 1px solid #334155;
-            border-radius: 8px;
+        li {
             margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        /* Efeito visual ao passar o mouse sobre a opção da lista */
-        .opcao-item:hover {
-            border-color: #f59e0b;
-            background-color: #273549;
-        }
-
-        /* Estilização do botão circular de seleção (radio) */
-        .opcao-item input[type="radio"] {
-            margin-right: 12px;
-            accent-color: #f59e0b; /* Altera a cor interna do botão selecionado */
-            cursor: pointer;
+            color: #94a3b8;
+            line-height: 1.5;
         }
 
         /* REORGANIZAÇÃO COM DIV: Layout para os links no rodapé */
@@ -142,10 +121,10 @@
             margin-top: 30px;
         }
 
-        /* PERSONALIZAÇÃO DOS LINKS: Estilizados como botões interativos modernos */
+        /* PERSONALIZAÇÃO DOS LINKS: Estilizados como botões interativos */
         .link-botao {
             display: inline-block;
-            background-color: #f59e0b; /* Âmbar para combinar com o quiz */
+            background-color: #38bdf8;
             color: #0f172a;
             text-decoration: none;
             padding: 12px 24px;
@@ -156,7 +135,7 @@
 
         /* Efeito de hover ao passar o mouse */
         .link-botao:hover {
-            background-color: #fbbf24;
+            background-color: #7dd3fc;
             transform: translateY(-2px);
         }
 
@@ -164,17 +143,17 @@
         .link-botao-secundario {
             display: inline-block;
             background-color: transparent;
-            color: #38bdf8;
+            color: #22c55e;
             text-decoration: none;
             padding: 12px 24px;
             border-radius: 8px;
             font-weight: bold;
-            border: 2px solid #38bdf8;
+            border: 2px solid #22c55e;
             transition: all 0.3s ease;
         }
 
         .link-botao-secundario:hover {
-            background-color: rgba(56, 189, 248, 0.1);
+            background-color: rgba(34, 197, 94, 0.1);
             transform: translateY(-2px);
         }
     </style>
@@ -187,7 +166,7 @@
         <!-- Cabeçalho principal com títulos modificados -->
         <div class="topo-cabecalho">
             <h1>Sinergia Humana</h1>
-            <p class="subtitulo">Conectando sensibilidade emocional e ações práticas para transformar coletivos.</p>
+            <p class="subtitulo">Como a união entre a sensibilidade e a ação coletiva transforma ambientes.</p>
         </div>
 
         <!-- Seções de conteúdo divididas por blocos organizados -->
@@ -196,61 +175,49 @@
             <!-- Bloco conceitual focado em Empatia -->
             <div class="card-artigo borda-empatia">
                 <h1>Sentir com o Outro: Empatia</h1>
-                <p>A empatia nos convida a pausar nossos julgamentos imediatos para escutar de verdade a perspectiva alheia. É o elo psicológico que gera acolhimento genuíno e fortalece a convivência em nossos círculos sociais e de estudo.</p>
+                <p>A empatia nos convida a suspender nossos julgamentos para ouvir verdadeiramente a realidade do outro. É o alicerce emocional que valida vivências alheias, permitindo conexões seguras no ambiente escolar e social.</p>
             </div>
 
             <!-- Bloco conceitual focado em Cooperação -->
             <div class="card-artigo borda-cooperacao">
                 <h1>Agir com o Outro: Cooperação</h1>
-                <p>A cooperação traduz o sentimento empático em metas palpáveis. Cooperar significa unir forças individuais para resolver um desafio que pertence ao grupo, entendendo que o avanço comum protege o crescimento de todos.</p>
+                <p>A cooperação traduz a empatia em ação prática. Significa somar talentos individuais para solucionar desafios coletivos. Quando cooperamos, entendemos que o sucesso comum fortalece cada membro do grupo.</p>
             </div>
 
-            <!-- NOVIDADE INTERATIVA: Quiz de autoavaliação com respostas de selecionar (radio inputs) -->
-            <div class="card-artigo borda-quiz">
-                <h1>Autoavaliação Prática</h1>
-                <p>Selecione manualmente a alternativa que melhor descreve suas ações e reações em situações do cotidiano:</p>
+            <!-- NOVIDADE: Bloco de conteúdo com perguntas e reflexões usando div, p, ul e li -->
+            <div class="card-artigo borda-perguntas">
+                <h1>Perguntas & Reflexões</h1>
                 
-                <!-- Formulário estruturado com perguntas e alternativas organizadas em listas -->
-                <form action="#" method="get">
-                    
-                    <!-- Pergunta 1 -->
-                    <p class="pergunta-quiz">1. Quando um colega de equipe está com dificuldades para realizar a parte dele no trabalho, o que você faz?</p>
-                    <ul class="lista-opcoes">
-                        <li>
-                            <label class="opcao-item">
-                                <input type="radio" name="pergunta1" value="a">
-                                Ofereço ajuda para realizarmos juntos ou explico o que ele não entendeu.
-                            </label>
-                        </li>
-                        <li>
-                            <label class="opcao-item">
-                                <input type="radio" name="pergunta1" value="b">
-                                Reclamo com o resto do grupo e faço a parte dele sozinho para não perder nota.
-                            </label>
-                        </li>
-                        <li>
-                            <label class="opcao-item">
-                                <input type="radio" name="pergunta1" value="c">
-                                Ignoro a situação e foco exclusivamente na minha própria parte do projeto.
-                            </label>
-                        </li>
-                    </ul>
+                <!-- Pergunta 1 -->
+                <p class="pergunta-titulo">1. Qual a diferença prática entre empatia e cooperação?</p>
+                <ul>
+                    <li>A empatia é o elo psicológico e a compreensão do sentimento alheio, enquanto a cooperação é a união de esforços físicos e intelectuais para resolver um problema comum.</li>
+                </ul>
 
-                    <!-- Pergunta 2 -->
-                    <p class="pergunta-quiz">2. Um amigo desabafa com você sobre um problema pessoal que você acha simples ou irrelevante. Qual sua atitude?</p>
-                    <ul class="lista-opcoes">
-                        <li>
-                            <label class="opcao-item">
-                                <input type="radio" name="pergunta2" value="a">
-                                Escuto com atenção, guardo o celular e valido o sentimento dele, oferecendo apoio.
-                            </label>
-                        </li>
-                        <li>
-                            <label class="opcao-item">
-                                <input type="radio" name="pergunta2" value="b">
-                                Digo diretamente que é uma bobeira e mudo de assunto para animá-lo.
-                            </label>
-                        </li>
-                        <li>
-                            <label class="opcao-item">
-                                <input type="radio" name="pergunta2" value="c">
+                <!-- Pergunta 2 -->
+                <p class="pergunta-titulo">2. Como podemos cooperar de forma eficiente em trabalhos escolares?</p>
+                <ul>
+                    <li>Dividindo as tarefas de maneira justa de acordo com as habilidades de cada um;</li>
+                    <li>Respeitando o tempo e o ritmo de aprendizado de todos os integrantes do grupo;</li>
+                    <li>Ouvindo feedbacks construtivos e mantendo o foco em ajudar a equipe a evoluir.</li>
+                </ul>
+
+                <!-- Pergunta 3 -->
+                <p class="pergunta-titulo">3. O que impede a prática da empatia no dia a dia?</p>
+                <ul>
+                    <li>O imediatismo das redes sociais, a falta de escuta ativa e a pressa em julgar as ações alheias antes de entender suas motivações secundárias.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Links finais estilizados e integrados à identidade do projeto -->
+        <div class="rodape-acoes">
+            <a href="https://github.com" target="_blank" class="link-botao">Unir-se à Rede</a>
+            <a href="#manifesto" class="link-botao-secundario">Ler Manifesto</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
