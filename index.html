@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- INDIVIDUALIZAÇÃO: Título da página totalmente customizado -->
-    <title>Sinergia Humana: Desafio Prático de Empatia e Cooperação</title>
+    <!-- INDIVIDUALIZAÇÃO: Título da página totalmente modificado -->
+    <title>Sinergia Humana: Teste de Empatia e Cooperação</title>
 
-    <!-- ESTILO CSS PRÓPRIO: Identidade visual em tons escuros e lilás embutida na tag style -->
+    <!-- ESTILO CSS PRÓPRIO: Identidade visual em tons de azul escuro e âmbar embutida na tag style -->
     <style>
         /* Estilos globais e reset de margens */
         body {
@@ -74,8 +74,8 @@
             border-left: 5px solid #38bdf8; /* Borda Azul para Cooperação */
         }
 
-        .borda-interativa {
-            border-left: 5px solid #a855f7; /* Borda Roxa para Painel Interativo */
+        .borda-quiz {
+            border-left: 5px solid #f59e0b; /* Borda Âmbar para o Quiz de Seleção */
         }
 
         /* Títulos dos blocos de conteúdo */
@@ -93,47 +93,45 @@
             margin: 0 0 15px 0;
         }
 
-        /* Estilo específico para as perguntas manuais */
-        .pergunta-usuario {
+        /* Estilo específico para as perguntas do Quiz */
+        .pergunta-quiz {
             font-weight: bold;
-            color: #e9d5ff; /* Roxo claro para as perguntas */
-            margin-top: 15px;
-            margin-bottom: 8px;
+            color: #fde68a; /* Amarelo claro para destacar a pergunta */
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
-        /* Personalização dos campos de digitação (caixas manuais de texto) */
-        textarea {
-            width: 100%;
-            height: 80px;
+        /* Customização da lista (ul e li) para organizar as opções de escolha */
+        .lista-opcoes {
+            list-style-type: none; /* Remove as bolinhas tradicionais da lista */
+            padding-left: 0;
+            margin: 0 0 20px 0;
+        }
+
+        /* Estilização de cada item de opção para criar um bloco clicável */
+        .opcao-item {
             background-color: #1e293b;
-            border: 2px solid #475569;
+            padding: 12px 16px;
+            border: 1px solid #334155;
             border-radius: 8px;
-            color: #ffffff;
-            padding: 10px;
-            font-family: inherit;
-            font-size: 0.95rem;
-            resize: vertical;
-            box-sizing: border-box;
-            margin-bottom: 15px;
-            transition: border-color 0.3s ease;
-        }
-
-        /* Efeito de foco quando o usuário clica na caixa de texto */
-        textarea:focus {
-            outline: none;
-            border-color: #a855f7;
-        }
-
-        /* Customização da lista de dicas (ul e li) */
-        ul {
-            padding-left: 20px;
-            margin: 15px 0 0 0;
-        }
-
-        li {
             margin-bottom: 8px;
-            color: #94a3b8;
-            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        /* Efeito visual ao passar o mouse sobre a opção da lista */
+        .opcao-item:hover {
+            border-color: #f59e0b;
+            background-color: #273549;
+        }
+
+        /* Estilização do botão circular de seleção (radio) */
+        .opcao-item input[type="radio"] {
+            margin-right: 12px;
+            accent-color: #f59e0b; /* Altera a cor interna do botão selecionado */
+            cursor: pointer;
         }
 
         /* REORGANIZAÇÃO COM DIV: Layout para os links no rodapé */
@@ -147,8 +145,8 @@
         /* PERSONALIZAÇÃO DOS LINKS: Estilizados como botões interativos modernos */
         .link-botao {
             display: inline-block;
-            background-color: #a855f7; /* Roxo para combinar com a área interativa */
-            color: #ffffff;
+            background-color: #f59e0b; /* Âmbar para combinar com o quiz */
+            color: #0f172a;
             text-decoration: none;
             padding: 12px 24px;
             border-radius: 8px;
@@ -158,7 +156,7 @@
 
         /* Efeito de hover ao passar o mouse */
         .link-botao:hover {
-            background-color: #c084fc;
+            background-color: #fbbf24;
             transform: translateY(-2px);
         }
 
@@ -189,7 +187,7 @@
         <!-- Cabeçalho principal com títulos modificados -->
         <div class="topo-cabecalho">
             <h1>Sinergia Humana</h1>
-            <p class="subtitulo">Conectando sentimentos e ações coletivas para construir uma comunidade forte.</p>
+            <p class="subtitulo">Conectando sensibilidade emocional e ações práticas para transformar coletivos.</p>
         </div>
 
         <!-- Seções de conteúdo divididas por blocos organizados -->
@@ -198,55 +196,61 @@
             <!-- Bloco conceitual focado em Empatia -->
             <div class="card-artigo borda-empatia">
                 <h1>Sentir com o Outro: Empatia</h1>
-                <p>A empatia nos convida a pausar nossos julgamentos imediatos para compreender o universo interno de outra pessoa. É o alicerce emocional que valida vivências alheias e gera acolhimento real em nossos ambientes sociais e de estudo.</p>
+                <p>A empatia nos convida a pausar nossos julgamentos imediatos para escutar de verdade a perspectiva alheia. É o elo psicológico que gera acolhimento genuíno e fortalece a convivência em nossos círculos sociais e de estudo.</p>
             </div>
 
             <!-- Bloco conceitual focado em Cooperação -->
             <div class="card-artigo borda-cooperacao">
                 <h1>Agir com o Outro: Cooperação</h1>
-                <p>A cooperação traduz a empatia em metas palpáveis. Cooperar significa somar competências individuais em prol de soluções coletivas. É entender com maturidade que o sucesso da comunidade impulsiona e protege o crescimento de todos.</p>
+                <p>A cooperação traduz o sentimento empático em metas palpáveis. Cooperar significa unir forças individuais para resolver um desafio que pertence ao grupo, entendendo que o avanço comum protege o crescimento de todos.</p>
             </div>
 
-            <!-- NOVIDADE: Painel interativo com campos para respostas manuais por escrito -->
-            <div class="card-artigo borda-interativa">
-                <h1>Autoavaliação e Diálogo</h1>
-                <p>Use o espaço abaixo para refletir e registrar manualmente suas próprias experiências sobre o tema:</p>
+            <!-- NOVIDADE INTERATIVA: Quiz de autoavaliação com respostas de selecionar (radio inputs) -->
+            <div class="card-artigo borda-quiz">
+                <h1>Autoavaliação Prática</h1>
+                <p>Selecione manualmente a alternativa que melhor descreve suas ações e reações em situações do cotidiano:</p>
                 
-                <!-- Formulário com perguntas reflexivas e caixas de texto -->
+                <!-- Formulário estruturado com perguntas e alternativas organizadas em listas -->
                 <form action="#" method="get">
                     
                     <!-- Pergunta 1 -->
-                    <p class="pergunta-usuario">1. Como você se sente quando alguém demonstra empatia genuína por um problema seu?</p>
-                    <textarea placeholder="Digite sua resposta manual aqui..."></textarea>
+                    <p class="pergunta-quiz">1. Quando um colega de equipe está com dificuldades para realizar a parte dele no trabalho, o que você faz?</p>
+                    <ul class="lista-opcoes">
+                        <li>
+                            <label class="opcao-item">
+                                <input type="radio" name="pergunta1" value="a">
+                                Ofereço ajuda para realizarmos juntos ou explico o que ele não entendeu.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="opcao-item">
+                                <input type="radio" name="pergunta1" value="b">
+                                Reclamo com o resto do grupo e faço a parte dele sozinho para não perder nota.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="opcao-item">
+                                <input type="radio" name="pergunta1" value="c">
+                                Ignoro a situação e foco exclusivamente na minha própria parte do projeto.
+                            </label>
+                        </li>
+                    </ul>
 
                     <!-- Pergunta 2 -->
-                    <p class="pergunta-usuario">2. Cite uma situação recente na escola ou em casa em que a cooperação poupou tempo ou evitou um problema:</p>
-                    <textarea placeholder="Digite sua resposta manual aqui..."></textarea>
-
-                    <!-- Pergunta 3 -->
-                    <p class="pergunta-usuario">3. O que você pode fazer hoje para ser mais cooperativo com a sua equipe ou turma?</p>
-                    <textarea placeholder="Digite sua resposta manual aqui..."></textarea>
-
-                    <!-- Lista de dicas finais agregando valor ao projeto -->
-                    <p class="pergunta-usuario">Dicas importantes para preenchimento:</p>
-                    <ul>
-                        <li>Seja sincero com as suas respostas;</li>
-                        <li>Pense em exemplos reais do seu cotidiano escolar;</li>
-                        <li>Lembre-se de que pequenas atitudes geram grandes impactos coletivos.</li>
-                    </ul>
-                    
-                </form>
-            </div>
-
-        </div>
-
-        <!-- Links finais estilizados e integrados à identidade do projeto -->
-        <div class="rodape-acoes">
-            <a href="https://github.com" target="_blank" class="link-botao">Salvar no GitHub</a>
-            <a href="#topo-cabecalho" class="link-botao-secundario">Voltar ao Topo</a>
-        </div>
-
-    </div>
-
-</body>
-</html>
+                    <p class="pergunta-quiz">2. Um amigo desabafa com você sobre um problema pessoal que você acha simples ou irrelevante. Qual sua atitude?</p>
+                    <ul class="lista-opcoes">
+                        <li>
+                            <label class="opcao-item">
+                                <input type="radio" name="pergunta2" value="a">
+                                Escuto com atenção, guardo o celular e valido o sentimento dele, oferecendo apoio.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="opcao-item">
+                                <input type="radio" name="pergunta2" value="b">
+                                Digo diretamente que é uma bobeira e mudo de assunto para animá-lo.
+                            </label>
+                        </li>
+                        <li>
+                            <label class="opcao-item">
+                                <input type="radio" name="pergunta2" value="c">
